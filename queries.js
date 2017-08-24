@@ -1,6 +1,6 @@
-var pgp = require('pg-promise')();
-var connectionString = 'postgres://expensetracker:expensetracker@localhost:5432/expensetracker?client_encoding=UTF8';
-var db = pgp(connectionString);
+const pgp = require('pg-promise')();
+const connectionString = 'postgres://expensetracker:expensetracker@localhost:5432/expensetracker?client_encoding=UTF8';
+const db = pgp(connectionString);
 
 function getTransactionCategories(req, res, next) {
     db.any('select * from TRANSACTION_CATEGORY')
