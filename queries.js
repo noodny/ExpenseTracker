@@ -19,5 +19,5 @@ function getTransactionCategories(req, res, next) {
 
 
 module.exports = {
-    getTransactionCategories: getTransactionCategories
+    getTransactionCategories
 };
