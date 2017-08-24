@@ -1,9 +1,4 @@
-const promise = require('bluebird');
-const options = {
-    promiseLib: promise
-};
-
-var pgp = require('pg-promise')(options);
+var pgp = require('pg-promise')();
 var connectionString = 'postgres://expensetracker:expensetracker@localhost:5432/expensetracker?client_encoding=UTF8';
 var db = pgp(connectionString);
 
